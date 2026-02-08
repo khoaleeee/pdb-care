@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About VIA | VIA Medical Education Program</title>
+  <meta name="description" content="Learn about VIA's mission, framework, and approach to evidence-informed resilience education."/>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#5A9AAF',      // soft medical blue
+            primaryDark: '#4A8299',
+            accent: '#6B9C8F',       // sage green
+            neutral: '#F7F9FC',
+            textDark: '#1F2937',
+            textSecondary: '#4B5563',
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-neutral font-sans text-textDark antialiased">
+
+  <!-- Header / Navigation – same as homepage -->
+  <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
+    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="text-2xl font-bold text-primary">VIA Medical Education</div>
+      <div class="hidden md:flex space-x-8 text-sm font-medium">
+        <a href="index.html" class="hover:text-primary transition">Home</a>
+        <a href="#" class="text-primary font-semibold">About VIA</a>
+        <a href="#" class="hover:text-primary transition">Programs</a>
+        <a href="#" class="hover:text-primary transition">For Clinicians</a>
+        <a href="#" class="hover:text-primary transition">Outcomes</a>
+        <a href="#" class="hover:text-primary transition">Contact</a>
+      </div>
+      <div class="flex space-x-4">
+        <a href="#" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primaryDark transition text-sm font-medium">
+          Refer a Patient
+        </a>
+        <a href="#" class="border border-primary text-primary px-6 py-3 rounded-lg hover:bg-accent/20 transition text-sm font-medium">
+          Contact Us
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Hero / Intro -->
+  <section class="bg-gradient-to-br from-blue-50 to-white py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight text-textDark mb-6">
+        About VIA Medical Education Program
+      </h1>
+      <p class="text-xl text-textSecondary max-w-3xl mx-auto">
+        Delivering evidence-informed education to support resilience, self-regulation, and well-being as a complement to standard medical care.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission & Purpose -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Mission & Purpose</h2>
+      <div class="prose prose-lg max-w-4xl mx-auto text-textSecondary">
+        <p>
+          VIA Medical Education Program exists to empower individuals and healthcare professionals with practical, evidence-informed knowledge and skills to manage stress, improve sleep, and build resilience.
+        </p>
+        <p>
+          Our mission is to provide structured, time-limited educational programs that promote nervous system regulation, positive behavior change, and long-term well-being — always as an adjunctive support to primary medical care, not a replacement.
+        </p>
+        <p>
+          We focus on self-regulation training and resilience education that can be integrated into routine clinical care, community health initiatives, and professional development.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIA Framework Overview -->
+  <section class="py-16 bg-gradient-to-b from-white to-neutral">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">VIA Framework Overview</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+          <h3 class="text-2xl font-semibold mb-4 text-primary">Vital Energy & Regulation</h3>
+          <p class="text-textSecondary">
+            Foundational education on nervous system regulation techniques to support energy, sleep, and stress response.
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+          <h3 class="text-2xl font-semibold mb-4 text-primary">Inspiration & Insights</h3>
+          <p class="text-textSecondary">
+            Building awareness of behavior patterns, motivation, and cognitive strategies to foster positive change.
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+          <h3 class="text-2xl font-semibold mb-4 text-primary">Awareness & Awakening</h3>
+          <p class="text-textSecondary">
+            Advanced self-observation and mindfulness-informed practices to enhance long-term resilience and well-being.
+          </p>
+        </div>
+      </div>
+      <p class="text-center text-textSecondary mt-10 italic max-w-3xl mx-auto">
+        The framework is grounded in neuroscience, behavioral science, and evidence-informed self-regulation strategies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Integration with Healthcare -->
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Integration with Healthcare</h2>
+      <div class="prose prose-lg max-w-4xl mx-auto text-textSecondary">
+        <p>
+          VIA programs are designed to work alongside — not replace — standard medical care.
+        </p>
+        <ul class="list-disc pl-6 space-y-3">
+          <li>Complements primary care, neurology, psychiatry, psychology, and therapy by providing educational tools for self-management.</li>
+          <li>Supports patients in areas such as stress-related symptoms, sleep difficulties, and chronic condition coping.</li>
+          <li>Offered as an adjunctive resource for clinicians seeking non-pharmacologic, skills-based options for their patients.</li>
+          <li>Clear ethical boundaries: VIA is not emergency psychiatric care, crisis intervention, or primary treatment.</li>
+        </ul>
+        <p class="mt-6 italic">
+          All programs emphasize safety, patient-centered care, and collaboration with existing healthcare providers.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer – same as homepage -->
+  <footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10">
+      <div>
+        <h3 class="text-white text-xl font-bold mb-4">VIA Medical Education Program</h3>
+        <p class="text-sm">Evidence-informed resilience and self-regulation education integrated with medical care.</p>
+      </div>
+      <div>
+        <h4 class="text-white mb-4 font-semibold">Quick Links</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="index.html" class="hover:text-white">Home</a></li>
+          <li><a href="#" class="text-white font-medium">About VIA</a></li>
+          <li><a href="#" class="hover:text-white">Programs</a></li>
+          <li><a href="#" class="hover:text-white">For Clinicians</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white mb-4 font-semibold">Contact</h4>
+        <p class="text-sm">Maryland / Virginia</p>
+        <p class="text-sm">Telehealth Available</p>
+        <p class="text-sm mt-2">contact@viamedicaleducation.org</p>
+      </div>
+      <div>
+        <h4 class="text-white mb-4 font-semibold">Disclaimer</h4>
+        <p class="text-sm italic">
+          This program is adjunctive educational support only and is not intended as emergency psychiatric care or a replacement for primary medical treatment.
+        </p>
+      </div>
+    </div>
+    <div class="text-center mt-12 text-sm border-t border-gray-800 pt-8">
+      © 2026 VIA Medical Education Program. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
