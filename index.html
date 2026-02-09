@@ -33,28 +33,49 @@
 <body class="bg-neutral font-sans text-textDark antialiased">
 
 <!-- ================= HEADER ================= -->
-
 <header class="bg-white shadow-sm sticky top-0 z-50">
   <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-
-    <div class="text-2xl font-bold text-primary">
-      Dzogchen Foundation
-    </div>
-
-    <div class="hidden md:flex space-x-6 text-sm font-medium">
-      <a href="#" class="hover:text-primary">Home</a>
-      <a href="#" class="hover:text-primary">About VIA</a>
-      <a href="#" class="hover:text-primary">Programs</a>
-      <a href="#" class="hover:text-primary">For Clinicians</a>
-      <a href="#" class="hover:text-primary">Outcomes &amp; Approach</a>
-      <a href="#" class="hover:text-primary">About the Program Director</a>
-      <a href="#" class="hover:text-primary">Contact</a>
-    </div>
-
-    <a href="#" class="bg-primary text-white px-5 py-2 rounded-full text-sm hover:bg-primaryDark transition">
-      Book Appointment
+    <!-- Left: Logo + Title – indented left -->
+    <a href="#" class="flex items-center space-x-3 -ml-2 md:-ml-4">
+      <img
+        src="images/DZOGCHEN FOUNDATION-5.png"
+        alt="Dzogchen Foundation Logo"
+        class="h-10 sm:h-12 md:h-14 lg:h-16 w-auto"
+      />
+      <span class="text-xl md:text-2xl font-bold text-primary">
+        Dzogchen Foundation
+      </span>
     </a>
 
+    <!-- Center: Navigation – limited visible items + "More" dropdown -->
+    <div class="hidden md:flex justify-center flex-1">
+      <div class="flex items-center space-x-6 lg:space-x-8 text-sm font-medium">
+        <a href="#" class="hover:text-primary transition">Home</a>
+        <a href="about.html" class="hover:text-primary transition">About VIA</a>
+        <a href="#" class="hover:text-primary transition">Programs</a>
+        <a href="#" class="hover:text-primary transition">For Clinicians</a>
+
+        <!-- "More" dropdown with the rest -->
+        <div class="relative group">
+          <button class="flex items-center hover:text-primary transition focus:outline-none">
+            More <span class="ml-1 text-xs">▼</span>
+          </button>
+          <div class="absolute right-0 hidden group-hover:block bg-white shadow-lg rounded-md mt-2 w-56 z-50 border border-gray-200">
+            <a href="#" class="block px-4 py-3 hover:bg-gray-50 transition text-sm">Outcomes & Approach</a>
+            <a href="#" class="block px-4 py-3 hover:bg-gray-50 transition text-sm">About the Program Director</a>
+          </div>
+        </div>
+
+        <a href="#" class="hover:text-primary transition">Contact</a>
+      </div>
+    </div>
+
+    <!-- Right: Book Appointment – pushed far right -->
+    <div class="ml-auto pl-8 md:pl-12 lg:pl-16">
+      <a href="#" class="bg-primary text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-primaryDark transition shadow-sm">
+        Book Appointment
+      </a>
+    </div>
   </nav>
 </header>
 
