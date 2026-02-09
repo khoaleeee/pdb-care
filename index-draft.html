@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dzogchen Foundation | PDB Care</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#538a81',      // soft sage teal
+            primaryDark: '#4A8C7F',
+            accent: '#E0F2F1',       // light mint
+            warmAccent: '#F7D794',   // soft gold for warmth
+            textDark: '#2D3748',
+            textSecondary: '#4A5568',
+            light: '#F9FAFB',        // soft off-white
+          },
+          fontFamily: {
+            heading: ['Playfair Display', 'serif'], // elegant, warm serif
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          animation: {
+            fadeIn: 'fadeIn 0.8s ease-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(10px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+          },
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .card-soft {
+      transition: all 0.3s ease;
+    }
+    .card-soft:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(90,159,147,0.12); // soft teal shadow
+    }
+  </style>
+</head>
+
+<body class="bg-neutral font-sans text-textDark antialiased">
+
+<!-- ================= HEADER ================= -->
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Left: Logo + Title – indented left -->
+    <a href="#" class="flex items-center space-x-3 -ml-2 md:-ml-4">
+      <img
+        src="images/DZOGCHEN FOUNDATION-5.png"
+        alt="Dzogchen Foundation Logo"
+        class="h-10 sm:h-12 md:h-14 lg:h-16 w-auto"
+      />
+      <span class="text-xl md:text-2xl font-bold text-primary">
+        Dzogchen Foundation
+      </span>
+    </a>
+
+    <!-- Center: Navigation – limited visible items + "More" dropdown -->
+    <div class="hidden md:flex justify-center flex-1">
+      <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm font-medium">        
+        <a href="index.html" class="hover:text-primary transition">Home</a>
+        <a href="about.html" class="hover:text-primary transition">About VIA</a>
+        <a href="#" class="hover:text-primary transition">Programs</a>
+        <a href="#" class="hover:text-primary transition">For Clinicians</a>
+
+        <!-- "More" dropdown with the rest -->
+        <div class="relative group">
+          <button class="flex items-center hover:text-primary transition focus:outline-none">
+            More <span class="ml-1 text-xs">▼</span>
+          </button>
+          <div class="absolute right-0 hidden group-hover:block bg-white shadow-lg rounded-md mt-2 w-56 z-50 border border-gray-200">
+            <a href="#" class="block px-4 py-3 hover:bg-gray-50 transition text-sm">Outcomes & Approach</a>
+            <a href="#" class="block px-4 py-3 hover:bg-gray-50 transition text-sm">About the Program Director</a>
+          </div>
+        </div>
+
+        <a href="#" class="hover:text-primary transition">Contact</a>
+      </div>
+    </div>
+
+    <!-- Right: Book Appointment – pushed far right -->
+    <div class="ml-auto pl-8 md:pl-12 lg:pl-16">
+      <a href="#" class="bg-primary text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-primaryDark transition shadow-sm">
+        Book Appointment
+      </a>
+    </div>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+  <section class="py-28 bg-gradient-to-br from-accent to-light">
+    <div class="max-w-6xl mx-auto px-6 text-center animate-fadeIn">
+      <h1 class="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
+        Redesign your health, life & world
+      </h1>
+      <p class="text-xl text-textSecondary max-w-3xl mx-auto mb-8">
+        Ancient wisdom is the code to reprogramming your body & life
+      </p>
+      <a href="#" class="inline-block bg-primary text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-primaryDark transition shadow-md card-soft">
+        Schedule Appointment
+      </a>
+    </div>
+  </section>
+
+  <!-- ================= UPCOMING EVENTS ================= -->
+  <section class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-6 animate-fadeIn">
+      <h2 class="text-3xl font-heading font-bold text-center mb-12 text-primary">
+        Upcoming Events
+      </h2>
+      <div class="bg-light rounded-2xl shadow p-10 card-soft">
+        <h3 class="text-2xl font-heading font-semibold mb-4 text-primary">
+          Online Meditation Course
+        </h3>
+        <p class="font-medium mb-4 text-textDark">
+          Every Thursday | 6:30 AM – 7:00 AM
+        </p>
+        <h4 class="text-xl font-heading font-semibold mb-4 text-primary">
+          Exciting News Ahead!
+        </h4>
+        <p class="text-textSecondary leading-relaxed space-y-4">
+          Get ready to dive into something truly special: our new meditation course.
+          Designed to boost mental health, well-being and enhance immunity, this course
+          will equip you with powerful meditation techniques that promote stress management,
+          mindfulness, and inner harmony.
+          Stay tuned for more details on course specifics, how to sign up, and the fantastic
+          benefits awaiting you.
+          Whether you're a seasoned meditator or just starting out, this course guarantees
+          to supercharge your mental clarity and emotional resilience.
+          We can't wait to share more with you soon. Get ready to embark on a journey toward
+          a happier, healthier you through the magic of meditation!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MEDIA FEATURE ================= -->
+  <section class="py-20 bg-light">
+    <div class="max-w-6xl mx-auto px-6 animate-fadeIn">
+      <h2 class="text-3xl font-heading font-bold text-center mb-12 text-primary">
+        Media Feature
+      </h2>
+      <div class="bg-white rounded-2xl shadow p-10 card-soft">
+        <h3 class="text-xl font-heading font-semibold mb-2 text-primary">
+          Northern Virginian Daily
+        </h3>
+        <p class="text-sm text-textSecondary mb-6">
+          August 5, 2024 — "A Shower for the Mind"
+        </p>
+        <p class="text-textSecondary leading-relaxed mb-6">
+          Gray skies, cold temps, low light: a recipe for SAD.
+          Dr. Sophia Wu, a neurologist and neuroscientist, notes that patients often report
+          sadness, fatigue, increased sleep, and cravings for high-calorie foods during
+          colder months.
+          Studies have shown students tend to have lower grades during winter seasons.
+        </p>
+        <blockquote class="border-l-4 border-accent pl-6 italic text-textSecondary">
+          “By training the mind with meditation, people can build a defensive system.
+          If you build up a strong foundation, you won’t be easily interfered with by
+          environmental fluctuations.”
+          <br><br>
+          — Ado Lama, Feb 19, 2025
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BLOG ================= -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6 animate-fadeIn">
+      <h2 class="text-3xl font-heading font-bold text-center mb-12 text-primary">
+        Health & Wellness Blog
+      </h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="bg-light rounded-xl shadow p-8 card-soft">
+          <h3 class="text-xl font-heading font-semibold mb-4 text-primary">
+            Ancient Wisdom & Wellness
+          </h3>
+          <p class="text-textSecondary">
+            Ancient wisdom is the code to reprogramming your body & life.
+            Learn how mindfulness and meditation improve immunity and emotional balance.
+          </p>
+        </div>
+        <div class="bg-light rounded-xl shadow p-8 card-soft">
+          <h3 class="text-xl font-heading font-semibold mb-4 text-primary">
+            Seasonal Mental Health
+          </h3>
+          <p class="text-textSecondary">
+            Understanding SAD and learning tools to improve mental wellness
+            through meditation and awareness practices.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="py-20 bg-gradient-to-br from-accent to-light">
+    <div class="max-w-4xl mx-auto px-6 text-center animate-fadeIn">
+      <h2 class="text-3xl font-heading font-bold mb-10 text-primary">
+        Ways To Get In Touch
+      </h2>
+      <div class="bg-white rounded-2xl shadow p-10 space-y-4 text-textSecondary card-soft">
+        <p><strong>Website:</strong> www.pdb.care</p>
+        <p><strong>Email:</strong> pdb.care@gmail.com</p>
+        <p><strong>Call/Text:</strong> 216.633.1853</p>
+        <p><strong>Address:</strong> 278 Lockhart Ln, Bentonville, VA 22610</p>
+        <div class="flex justify-center space-x-6 pt-6 text-primary font-medium">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-primary text-white py-10">
+    <div class="max-w-6xl mx-auto px-6 text-center text-sm">
+      © 2026 Dzogchen Foundation • PDB Care • All Rights Reserved
+    </div>
+  </footer>
+
+</body>
+</html>

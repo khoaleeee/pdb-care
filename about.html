@@ -12,15 +12,26 @@
       theme: {
         extend: {
           colors: {
-            primary: '#5A9AAF',      // soft medical blue
-            primaryDark: '#4A8299',
-            accent: '#6B9C8F',       // sage green
-            neutral: '#F7F9FC',
-            textDark: '#1F2937',
-            textSecondary: '#4B5563',
+            primary: '#4663ac',     /* Deep blue */
+            secondary: '#c1d8f0',   /* Pale blue */
+            light: '#e1f1fd',       /* Sky mist */
+            soft: '#c8d9ed',        /* Soft blue */
+            cloud: '#d2deeb',       /* Cloud */
+            textDark: '#1F2D2A',
+            textLight: '#FFFFFF',
           },
           fontFamily: {
             sans: ['Inter', 'system-ui', 'sans-serif'],
+            heading: ['Playfair Display', 'serif'],
+          },
+          animation: {
+            fadeIn: 'fadeIn 0.8s ease-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(10px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
           },
         }
       }
@@ -30,36 +41,63 @@
 </head>
 <body class="bg-neutral font-sans text-textDark antialiased">
 
-  <!-- Header / Navigation – same as homepage -->
-  <header class="sticky top-0 z-50 bg-white border-b border-gray-200">
-    <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-      <div class="text-2xl font-bold text-primary">VIA Medical Education</div>
-      <div class="hidden md:flex space-x-8 text-sm font-medium">
-        <a href="index.html" class="hover:text-primary transition">Home</a>
-        <a href="#" class="text-primary font-semibold">About VIA</a>
-        <a href="#" class="hover:text-primary transition">Programs</a>
-        <a href="#" class="hover:text-primary transition">For Clinicians</a>
-        <a href="#" class="hover:text-primary transition">Outcomes</a>
-        <a href="#" class="hover:text-primary transition">Contact</a>
+<!-- ================= HEADER ================= -->
+  <header class="absolute top-0 left-0 right-0 z-50 bg-transparent">
+    <nav class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+      <!-- Left: Logo + Title -->
+      <a href="#" class="flex items-center space-x-3">
+        <img
+          src="images/DZOGCHEN FOUNDATION-5.png"
+          alt="Dzogchen Foundation Logo"
+          class="h-10 md:h-12 w-auto"
+        />
+        <span class="text-xl md:text-2xl font-heading font-bold text-white drop-shadow-md">
+          Dzogchen Foundation
+        </span>
+      </a>
+
+      <!-- Center: Navigation (small, white, centered) -->
+      <div class="hidden md:flex justify-center flex-1 space-x-10 text-sm font-medium text-white">
+        <a href="index.html" class="hover:text-accent transition">Home</a>
+        <a href="about.html" class="hover:text-accent transition">About VIA</a>
+        <a href="#" class="hover:text-accent transition">Programs</a>
+        <a href="#" class="hover:text-accent transition">For Clinicians</a>
+        <a href="#" class="hover:text-accent transition">Contact</a>
+
+        <!-- "More" dropdown – fixed and reliable -->
+        <div class="relative group">
+          <button 
+            class="flex items-center hover:text-accent transition focus:outline-none cursor-pointer"
+            aria-expanded="false"
+            aria-haspopup="true"
+          >
+            More <span class="ml-1 text-xs">▼</span>
+          </button>
+          <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-56 bg-soft rounded-md shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <div class="py-1">
+              <a href="#" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition">Outcomes & Approach</a>
+              <a href="#" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary transition">About the Program Director</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="flex space-x-4">
-        <a href="#" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primaryDark transition text-sm font-medium">
-          Refer a Patient
-        </a>
-        <a href="#" class="border border-primary text-primary px-6 py-3 rounded-lg hover:bg-accent/20 transition text-sm font-medium">
-          Contact Us
+
+      <!-- Right: CTA (indented right) -->
+      <div class="ml-auto">
+        <a href="#" class="bg-primary text-white px-6 py-3 rounded-full text-sm font-medium hover:bg-primary transition shadow-md">
+          Book Appointment
         </a>
       </div>
     </nav>
   </header>
 
   <!-- Page Hero / Intro -->
-  <section class="bg-gradient-to-br from-blue-50 to-white py-16 md:py-24">
+<section class="relative min-h-screen flex items-center bg-gradient-to-br from-primary via-secondary to-light overflow-hidden">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <h1 class="text-4xl md:text-5xl font-bold leading-tight text-textDark mb-6">
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight text-white mb-6">
         About VIA Medical Education Program
       </h1>
-      <p class="text-xl text-textSecondary max-w-3xl mx-auto">
+      <p class="text-xl text-textLight max-w-3xl mx-auto">
         Delivering evidence-informed education to support resilience, self-regulation, and well-being as a complement to standard medical care.
       </p>
     </div>
